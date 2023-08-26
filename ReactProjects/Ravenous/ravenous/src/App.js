@@ -1,12 +1,15 @@
 import './App.css';
-import './Business/business.js';
+import './Components/Business/business.js';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p className="Title">
+        <h1 className="Title">
           Ravenous
+        </h1>
+        <p>
+          
         </p>
       </header>
     </div>
