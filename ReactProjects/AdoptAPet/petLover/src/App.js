@@ -11,12 +11,14 @@ import { createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 // create router with JSX Route elements
 const router = createBrowserRouter(createRoutesFromElements( 
 <Route path="/" element={<Root/>}>
-  <Route path="/home" element={<HomePage/>}/>
+  <Route path="/" element={<HomePage/>}/>
+  <Route path=":type" element={<type/>}/>
   <Route path="/search" element={<SearchPage/>}/>
   <Route path="/detail" element={<PetDetailsPage/>}/>
   <Route path="/petDetailsNotFound" element={<PetDetailsNotFound/>}/>
   <Route path="/components" element={<Root/>}/>
-</Route>
+  <Route path="/:type" element={<Component/>}/>
+  </Route>
 ));
 function App() {
   return (
