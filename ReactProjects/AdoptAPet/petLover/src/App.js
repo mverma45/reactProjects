@@ -12,7 +12,10 @@ import { createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 const router = createBrowserRouter(createRoutesFromElements( 
 <Route path="/" element={<Root/>}>
   <Route path="/" element={<HomePage/>}/>
-  <Route path=":type" element={<type/>}/>
+  <Route path=":type" element={<HomePage/>}>
+  </Route>
+  <Route path=":type/:id" element={<PetDetailsPage/>}>
+  </Route>
   <Route path="/search" element={<SearchPage/>}/>
   <Route path="/detail" element={<PetDetailsPage/>}/>
   <Route path="/petDetailsNotFound" element={<PetDetailsNotFound/>}/>
